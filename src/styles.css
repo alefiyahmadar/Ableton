@@ -1,4 +1,76 @@
+html{
+
+  margin: 0%;
+  padding: 0%;
+box-sizing: border-box;
+}
 .App {
   font-family: sans-serif;
   text-align: center;
+  margin: 0%;
+  padding: 0%;
+
+}
+.nav{
+
+  display: flex;
+  border-bottom: 2px #F3F3F3 solid;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 10vh;
+  
+
+}
+.nav img{
+  margin-left: 2rem;
+}
+.nav-items{
+
+  display: flex;
+  margin-left: 2rem;
+  
+  
+}
+.nav-right{
+  display: flex;
+  position:absolute;
+  right: 2%;
+  
+}
+.nav p{
+  margin-left: 1.5rem;
+  font-size: 15px;
+  font-weight: 550;
+  padding-top: 0.5rem;
+}
+
+@media only screen and (min-width: 430px){
+
+  .container{
+    background-color: blue;
+    display: grid;
+  
+    grid-template-columns: 50px 50px  auto 50px 50px ;
+    grid-template-rows: [row1-start] 70px [row1-end] 70px [third-line] 50px [last-line];
+  
+  }
+  .aboutDiv{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+
+  }
+  .aboutDiv ul{
+    list-style: none;
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    font-size: 15px;
+  font-weight: 550;
+  padding: 1rem;
+  }
+
 }

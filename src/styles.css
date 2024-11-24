@@ -5,7 +5,7 @@ html{
 box-sizing: border-box;
 }
 .App {
-  font-family: sans-serif;
+  font-family:  "Parkinsans", sans-serif;
   text-align: center;
   margin: 0%;
   padding: 0%;
@@ -48,21 +48,25 @@ box-sizing: border-box;
 @media only screen and (min-width: 430px){
 
   .container{
-    background-color: blue;
+    
     display: grid;
   
     grid-template-columns: 50px 50px  auto 50px 50px ;
-    grid-template-rows: [row1-start] 70px [row1-end] 70px [third-line] 50px [last-line];
+    grid-template-rows: [row1-start] 50px [row1-end] 700px [third-line] 50px [last-line];
   
   }
   .aboutDiv{
     grid-column-start: 1;
     grid-column-end: 6;
     background-color: white;
-    position: fixed;
+    position: sticky;
     width: 100%;
+    top: 0;
+    z-index: 100;
+    
 
   }
+  
   .aboutDiv ul{
     list-style: none;
     display: flex;
@@ -70,7 +74,58 @@ box-sizing: border-box;
     justify-content: space-evenly;
     font-size: 15px;
   font-weight: 550;
-  padding: 1rem;
+  
+  
   }
+  .imgDiv{
+
+    grid-column-start:3 ;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  
+    background-image: url(https://images.pexels.com/photos/10487720/pexels-photo-10487720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    width: 100%;
+    background-repeat: no-repeat;
+     
+    
+  }
+  .imgDiv p{
+
+    position: absolute;
+    top: 40%;
+    right: 45%;
+    font-size: 90px;
+    color: #ff764d;
+    font-weight: 600;
+    z-index: 99;
+    
+  }
+  .info{
+grid-row-start: 4;
+grid-column-start: 3;
+margin-top: 1rem;
+
+
+
+
+  }
+  .info h3{
+
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    font-size: 25px;
+  }
+  .info h4{
+
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
 
 }

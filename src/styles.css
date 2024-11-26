@@ -393,5 +393,154 @@ height: 90vh;
   display: flex;
   justify-items: left;
 }
+.ImgStyle5{
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50px 500px 500px 50px;
+  grid-template-rows: 50px 500px 50px;
+
+  
+  
+  
+}
+.img5{
+
+  
+  grid-column-start: 2;
+  grid-row-start: 2;
+  background-image: url(https://images.pexels.com/photos/8297845/pexels-photo-8297845.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+}
+.text5{
+
+  background-color:#b1c5ff;
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+.text5 h2{
+  text-align: left;
+  width: 90%;
+  padding: 1rem;
+  margin: auto;
+  padding-top: 20%;
+  font-size: 25px;
+}
+.text5 h3{
+  text-align: left;
+  width: 90%;
+  padding: 1rem;
+  margin: auto;
+  font-size: 25px;
+  color:  #0000ff;
+}
+.text5 img{
+
+  position: absolute;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer {
+  
+  border-top: 2px solid 
+  #b6ffc0;
+  line-height: 1.5;
+  
+}
+footer a {
+  text-decoration: none;
+  color:black;
+}
+a:hover {
+  text-decoration: underline;
+}
+.ft-title {
+  color: black;
+  font-family: ’Merriweather’, serif;
+  font-size: 1.375rem;
+  padding-bottom: 0.625rem;
+}
+.bodyFt{
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.containerFt{
+
+  flex: 1;
+}
+.ft-main {
+  padding: 1.25rem 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.ft-main-item {
+  padding: 1.25rem;
+  min-width: 12.5rem /*200px*/;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+input[type="email"] {
+  
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+  
+}
+input[type="submit"] {
+  background-color: #00d188;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
+}
+.ft-social {
+  padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+  display: flex;
+  justify-content: center;
+  border-top: 1px #777 solid; 
+  padding-top: 1.25rem;
+  color: black;
+}
+.ft-social-list li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
+.ft-legal {
+  padding: 0.9375rem 1.875rem;
+
+}
+.ft-legal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-legal-list li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+  flex: 1;       /* same as flex-grow: 1; */
+}
+
+
+
+
+
+
+
+
+
+
 
 }

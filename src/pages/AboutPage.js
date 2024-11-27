@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export const AboutPg =()=>{
 
@@ -13,9 +14,9 @@ export const AboutPg =()=>{
         <div className="container">
         <div className="aboutDiv">
             <ul>
-                <li>About</li>
-                <li>Jobs</li>
-                <li>Apprenticeships</li>
+                <li ><NavLink className="link active" to={"/"}>About</NavLink></li>
+                <li><NavLink className="link" to={"/jobs"}>Jobs</NavLink></li>
+                <li><NavLink className="link" to={"/Apprentice"}>Apprenticeships</NavLink></li>
             </ul>
         </div>
         <div className="imgDiv">

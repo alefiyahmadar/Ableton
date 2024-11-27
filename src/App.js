@@ -2,6 +2,8 @@ import "./styles.css";
 import { React } from "react"
 import { Routes, Route, NavLink } from "react-router-dom";
 import { AboutPg } from "./pages/AboutPage";
+import { JobPg } from "./pages/Jobs";
+import { ApprenticePg } from "./pages/Apprentice";
 
 
 export default function App() {
@@ -33,6 +35,8 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<AboutPg />}></Route>
+        <Route path="/jobs" element={<JobPg/>}></Route>
+        <Route path="/Apprentice" element={<ApprenticePg/>}></Route>
       </Routes>
 
 

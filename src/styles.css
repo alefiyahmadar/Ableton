@@ -5,9 +5,12 @@ html{
 box-sizing: border-box;
 }
 .App {
-  font-family: "Parkinsans", serif;
+  
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+
   font-optical-sizing: auto;
-  font-weight: 700;
+  /* font-weight: 700; */
   font-style: normal;
   text-align: center;
   margin: 0%;
@@ -92,9 +95,10 @@ box-sizing: border-box;
     grid-row-start: 2;
     grid-row-end: 3;
   
-    background-image: url(https://images.pexels.com/photos/10487720/pexels-photo-10487720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    width: 100%;
-    background-repeat: no-repeat;
+    background-image: url("/src/images/pexels-caleboquendo-10487720.jpg");
+    background-size: cover;
+    
+    background-color: yellow;
      
     
   }
@@ -567,7 +571,7 @@ background-image: url(https://images.pexels.com/photos/7653571/pexels-photo-7653
 
   margin: auto;
   padding-top: 15%;
-  font-size: 90px;
+  font-size: 70px;
   color: #d5b3ff;
   font-weight: 600;
   z-index: 99;
@@ -692,6 +696,57 @@ margin-bottom: 0%;
   background-size: 100% auto;
 
 }
+.containerHome{
+
+
+  display: grid;
+  grid-template-columns: 50px 50px  auto 50px 50px ;
+    grid-template-rows: [row1-start] 50px [row1-end] 500px [third-line] 10px [last-line] 500px;
+  
+  
+ 
+}
+.containerHomeImg{
+
+  
+  grid-column-start:1 ;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  background-image: url("/src/images/pexels-pixabay-164716.jpg");
+  
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  
+}
+.containerHomeImg p{
+  position: absolute;
+  font-size: 70px;
+  left: 5%;
+  top: 25%;
+  color: 
+  #fbffa7;
+}
+.homeLink{
+  position: absolute;
+  font-size: 30px;
+  left: 5%;
+  top: 55%;
+  color: 
+  #fbffa7;
+  
+
+}
+.HomeGetMove{
+
+  background-color: yellow;
+  grid-column-start: 3;
+  grid-row-start: 4;
+  text-align: left;
+}
+
 
 
 

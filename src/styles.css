@@ -542,6 +542,7 @@ input[type="submit"] {
 
   text-decoration: none;
   color: black;
+  padding: 1rem;
   
 }
 .active{
@@ -726,27 +727,48 @@ margin-bottom: 0%;
   font-size: 70px;
   left: 5%;
   top: 25%;
-  color: 
-  #fbffa7;
+  color: #b1c5ff;
 }
 .homeLink{
   position: absolute;
   font-size: 30px;
   left: 5%;
   top: 55%;
-  color: 
-  #fbffa7;
+  color:
+  #b1c5ff;
   
 
 }
 .HomeGetMove{
 
-  background-color: yellow;
+  
   grid-column-start: 3;
   grid-row-start: 4;
   text-align: left;
 }
+.HomeGetMove h3{
+  padding: 1rem;
+font-size: 25px;
+font-weight: 500;
+}
+.MoveVidDiv{
 
+  display: flex;
+}
+.MoveVidDiv div{
+
+  padding: 1rem;
+}
+.containerShop{
+  
+
+}
+.LiveShop{
+grid-column-start: 1;
+grid-column-end: 2;
+
+  background-color: yellow;
+}
 
 
 

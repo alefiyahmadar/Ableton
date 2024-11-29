@@ -5,6 +5,7 @@ import { AboutPg } from "./pages/AboutPage";
 import { JobPg } from "./pages/Jobs";
 import { ApprenticePg } from "./pages/Apprentice";
 import { HomePage } from "./pages/HomePg";
+import { ShopPage } from "./pages/ShopPg";
 
 
 export default function App() {
@@ -19,7 +20,7 @@ export default function App() {
         <p>Push</p>
         <p>Note</p>
         <p>Link</p>
-        <p>Shop</p>
+        <p><NavLink className={"link"} to={"/shop"}>Shop</NavLink></p>
         <p>Packs</p>
         <p>Help</p>
         <p>More</p>
@@ -40,6 +41,7 @@ export default function App() {
         <Route path="/home" element={<HomePage/>}></Route>
         <Route path="/jobs" element={<JobPg/>}></Route>
         <Route path="/Apprentice" element={<ApprenticePg/>}></Route>
+        <Route path="/shop" element={<ShopPage/>}></Route>
       </Routes>
 
 

@@ -774,3 +774,101 @@ grid-column-end: 2;
 
 
 }
+
+@media only screen and (max-width:430px){
+
+  .App{
+
+    
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    
+  }
+.nav-items{
+  display: none;
+}
+.nav-right p{
+
+  display: none;
+}
+
+img{
+
+  display: none;
+}
+iframe{
+
+  display: none;
+}
+
+.container{
+    
+  display: grid;
+  
+
+  grid-template-columns: 10px 10px  auto 10px 10px ;
+  grid-template-rows: [row1-start] 50px [row1-end] 200px [third-line] 200px [last-line];
+
+
+}
+.aboutDiv{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  background-color: yellow;
+  font-size: 10px;
+  font-weight: bold;
+
+
+  
+
+}
+.aboutDiv ul{
+  
+  display: flex;
+  list-style: none;
+  
+}
+.aboutDiv ul li{
+display: flex;
+padding: 0.5rem;
+font-weight: bold;
+
+
+  
+}
+.link{
+
+  text-decoration: none;
+}
+.imgDiv{
+
+grid-column-start:3 ;
+grid-row-start: 2;
+background-image: url("/src/images/pexels-caleboquendo-10487720.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+
+}
+.imgDiv p{
+  position: absolute;
+  font-size: 50px;
+  left: 20%;
+  top: 20%;
+  color: #ff764d;
+  font-weight: 600;
+  z-index: 99;
+
+}
+.info{
+  grid-row-start: 3;
+  grid-column-start: 3;
+  font-size: 10px;
+width: 100%;
+text-align: left;
+}
+
+
+
+}

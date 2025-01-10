@@ -114,7 +114,7 @@ export const AboutPg =()=>{
 
 
 </div>
-<div >
+<div className="container-for-text2" >
     <h3>We want our employees to love it here. Since we’re looking for exceptional talent from around the world, we will do everything we can to make your transition as easy as possible.</h3>
     <h4>If you're joining us in Berlin, we'll help with relocation and paperwork. We’ll even provide you with free German or English lessons. Plus, working in Germany means you can expect comprehensive health insurance for you and your family, as well as generous maternity and paternity leave. Office hours are flexible, but it’s not all work; we have several company and team outings throughout the year as well as a variety of fun, informal small-group activities.
 
@@ -129,7 +129,7 @@ export const AboutPg =()=>{
     </div>
     <div className="text5">
         <h2>We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.</h2>
-        <h3>See latest jobs <img src="data:image/png;base64,    iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL9JREFUSEvt080JwkAQhuE3PQi5e7EHBW1HvAp2IrkLKSQQrCEQCxAFazADEVYh7nzBBQ/JeTLP/G1G4i9LnJ8JiE74r0Z0AE7ANVp2EODtYAccgRZYK4gXyIFz18EcuABL4O7pxAtYrhBp+k6iiAK8kApYAC5EBQyZAXWArIDH0Lh+AdjSB0elAp/Vf01uXSmALVmavwKMuiAF2HZnWvSXswFunjegABa7B0rlFauAt+i3OGXJEzBqAtGfku/gCS9GIhmCfOLGAAAAAElFTkSuQmCC"/></h3>
+        <h3>See latest jobs <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL9JREFUSEvt080JwkAQhuE3PQi5e7EHBW1HvAp2IrkLKSQQrCEQCxAFazADEVYh7nzBBQ/JeTLP/G1G4i9LnJ8JiE74r0Z0AE7ANVp2EODtYAccgRZYK4gXyIFz18EcuABL4O7pxAtYrhBp+k6iiAK8kApYAC5EBQyZAXWArIDH0Lh+AdjSB0elAp/Vf01uXSmALVmavwKMuiAF2HZnWvSXswFunjegABa7B0rlFauAt+i3OGXJEzBqAtGfku/gCS9GIhmCfOLGAAAAAElFTkSuQmCC"/></h3>
     </div>
 </div>
 

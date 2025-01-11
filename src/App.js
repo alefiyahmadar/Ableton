@@ -1,20 +1,39 @@
 import "./styles.css";
-import { React } from "react"
-import { Routes, Route, NavLink } from "react-router-dom";
+import { React, useContext } from "react"
+import { Routes, Route, NavLink, useNavigate } from "react-router-dom";
 import { AboutPg } from "./pages/AboutPage";
 import { JobPg } from "./pages/Jobs";
 import { ApprenticePg } from "./pages/Apprentice";
 import { HomePage } from "./pages/HomePg";
 import { ShopPage } from "./pages/ShopPg";
+import { ContextProvider, MediaContext } from "./ContextProv";
 
 
 export default function App() {
+
+  const navigate = useNavigate()
+  const {isMenuOpen , setMenuopen} = useContext(MediaContext)
   return (
     <div className="App">
+      <div className={`floatMenu ${isMenuOpen ? "open" : "closed"}`} style={{display:isMenuOpen ? "flex" :"none"}} >
+        <ul>
+          <li>Live</li>
+<li>Push</li>
+<li>Note</li>
+<li>Link</li>
+<li>Shop</li>
+<li>Packs</li>
+<li>Help</li>
+<li>More</li>
+<li>Try Live 12 for free</li>
+<li >Log in or register</li>
+
+        </ul>
+      </div>
       <nav className="nav">
-        <NavLink to={"/home"}><img style={{display:"block"}} width="50" height="50" src="https://img.icons8.com/material/24/geometric-figures.png" alt="geometric-figures"/></NavLink>
+       <div onClick={()=>navigate("/home")} className="logoDiv"></div>
         
-      <p className="menu">Menu<img style={{display:"block" }} width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/sort-down.png" alt="sort-down"/></p>
+      <p className="menu" style={{color: isMenuOpen ? "white" :"black"}}>Menu<img onClick={()=>setMenuopen(!isMenuOpen)} style={{display:"block" }} width="10" height="10" src="https://img.icons8.com/ios-glyphs/30/sort-down.png" alt="sort-down"/></p>
         
         <div className="nav-items">
         <p>Live</p>

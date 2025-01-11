@@ -1480,9 +1480,10 @@ width: 100%;
 .apprImg1 h4{
 
   grid-column-start: 2;
+  font-weight: 10;
   grid-row-start:3 ;
   font-size: 10px;
-  font-weight: 400;
+  
   margin: 0%;
 }
 .apprImg2{
@@ -1521,7 +1522,7 @@ width: 100%;
 .apprImg4{ 
   display: grid;
   grid-template-columns: 50px  auto  50px;
- grid-template-rows: [row1-start] 0px [row1-end] 0px [third-line] 150px 10px [last-line];
+ grid-template-rows: [row1-start] 0px [row1-end] 30px [third-line] 160px 30px [last-line];
  text-align: left;
 
 

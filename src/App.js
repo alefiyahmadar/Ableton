@@ -33,7 +33,7 @@ export default function App() {
       <nav className="nav">
        <div onClick={()=>navigate("/home")} className="logoDiv"></div>
         
-      <p className="menu" style={{color: isMenuOpen ? "white" :"black"}}>Menu<img onClick={()=>setMenuopen(!isMenuOpen)} style={{display:"block" }} width="10" height="10" src="https://img.icons8.com/ios-glyphs/30/sort-down.png" alt="sort-down"/></p>
+      <p className="menu" style={{color: isMenuOpen ? "white" :"black"}}>Menu<img onClick={()=>setMenuopen(!isMenuOpen)} style={{display:"block" }} width="10" height="10" src={ isMenuOpen ? "https://img.icons8.com/ios-filled/50/FFFFFF/chevron-up.png" : "https://img.icons8.com/ios-filled/50/1A1A1A/chevron-down.png" }alt="sort-down"/></p>
         
         <div className="nav-items">
         <p>Live</p>

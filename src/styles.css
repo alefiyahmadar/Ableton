@@ -582,7 +582,7 @@ input[type="submit"] {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 2;
-background-image: url(https://images.pexels.com/photos/7653571/pexels-photo-7653571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+background-image: url(/src/images/job.jpeg);
   background-repeat: no-repeat;
 
 
@@ -687,7 +687,7 @@ margin-bottom: 0%;
   grid-row-start: 4;
   width: 60%;
   padding: 1rem;
-  background-image: url(https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-image: url(/src/images/aprr1.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -711,7 +711,7 @@ margin-bottom: 0%;
   grid-row-start: 6;
   width: 60%;
   padding: 1rem;
-  background-image: url(https://images.pexels.com/photos/3184395/pexels-photo-3184395.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-image: url(/src/images/aprr2.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -824,6 +824,7 @@ grid-column-end: 2;
   margin-left: 1rem;
   background-position: center;
   background-size: cover;
+  margin-top: 0.5rem;
   
   
 }
@@ -843,9 +844,9 @@ grid-column-end: 2;
 
 .menu img{
   position: absolute;
+  z-index: 1000;
   top: 5%;
   padding-left: 0.75rem;
-  z-index: 1000;
 }
 
 .floatMenu{
@@ -857,10 +858,13 @@ grid-column-end: 2;
   position: absolute; 
   color: white;
   transition: height 0.5s ease-in-out;
+  overflow: hidden;
+  
 }
 .floatMenu.open{
 
-  height: 100vh;
+  height: 105vh;
+  
 }
 .floatMenu.close{
 
@@ -874,6 +878,8 @@ grid-column-end: 2;
   text-align: left;
   margin-top: 2rem;
   padding: 1rem;
+  
+  
 }
 .floatMenu ul li{
 
@@ -1390,6 +1396,143 @@ background-image: url(https://images.pexels.com/photos/7653571/pexels-photo-7653
   margin: auto;
   text-align: left;
   margin-bottom: 1rem;
+}
+.containerJobs{
+
+  display: grid ;
+  grid-template-columns: 10px 10px auto 10px 10px;
+grid-template-rows: [row1-start] 50px [row1-end] 200px [third-line] 10px 60px 150px 100px [last-line];
+}
+.jobImg{
+
+  background-position: center;
+  background-size: cover;
+}
+.jobImg p{
+  font-size: 40px;
+  margin-top: 20%;
+  padding-top: 0%;
+}
+.jobInfo{
+
+  grid-column-start: 3;
+  grid-row-start: 4;
+  font-size: 10px;
+}
+.jobInfo h3{
+font-size: 10px;
+margin: auto;
+width: 100%;
+
+}
+.jobInfo h4{
+
+  width: 100%;
+  font-size: 10px;
+  
+  
+}
+.commerce{
+
+  grid-column-start: 3;
+  grid-row-start: 6;
+  
+}
+.commerce h3{
+
+  text-align: left;
+  font-size: 10px;
+  margin: 0;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.commerce p{
+  width: 100%;
+  font-size: 10px;
+  margin:0;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  
+
+}
+.apprImg1{
+
+  display: grid;
+   grid-template-columns: 50px  auto  50px;
+  grid-template-rows: [row1-start] 40px [row1-end] 40px [third-line] 140px  [last-line];
+  text-align: left;
+  
+}
+.apprImg1 h2{
+
+  grid-column-start: 2;
+  grid-row-start: 1;
+  font-size: 15px;
+
+}
+.apprImg1 h3{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  font-size: 10px;
+  margin: 0%;
+
+}
+.apprImg1 h4{
+
+  grid-column-start: 2;
+  grid-row-start:3 ;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0%;
+}
+.apprImg2{
+  display: grid;
+   grid-template-columns: 50px  auto  50px;
+  grid-template-rows: [row1-start] 0px [row1-end] 0px [third-line] 150px  [last-line];
+  text-align: left;
+  
+
+  
+  
+
+}
+.apprImg2 div{
+
+  grid-column-start: 2;
+  grid-row-start:3 ;
+  background-image: url(/src/images/aprr1.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.apprImg3{
+  display: grid;
+  grid-template-columns: 50px  auto  50px;
+ grid-template-rows: [row1-start] 0px [row1-end] 20px [third-line] 200px  [last-line];
+ text-align: left;
+
+}
+.apprImg3 p{
+
+  grid-column-start: 2;
+  grid-row-start: 3;
+  font-size: 10px;
+}
+.apprImg4{ 
+  display: grid;
+  grid-template-columns: 50px  auto  50px;
+ grid-template-rows: [row1-start] 0px [row1-end] 0px [third-line] 150px 10px [last-line];
+ text-align: left;
+
+
+}
+.apprImg4 div{
+  grid-column-start: 2;
+  grid-row-start:3 ;
+  background-image: url(/src/images/aprr2.webp);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
 }
 
 

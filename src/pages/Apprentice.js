@@ -18,14 +18,16 @@ export const ApprenticePg =()=>{
 
         </div>
         <div className="apprImg2">
-            
+            <div></div>
         </div>
 <div className="apprImg3">
     <p>At Ableton, you'll work towards the Office Management Assistant apprenticeship over two and a half years, developing your professional and personal skills in different teams. We look for people who are highly motivated to work in a commercial office environment, with an excellent level of German and very good English. It’s important that you’re eager to learn, organized in your work, and communicative when collaborating with others. Plus, you should be ready to get the most out of your development through giving and receiving feedback. You can expect a relaxed, professional atmosphere with a dynamic team of people who love music in return.
 
 </p>
 </div>
-<div className="apprImg4"></div>
+<div className="apprImg4">
+    <div></div>
+</div>
 
 
         </div>
